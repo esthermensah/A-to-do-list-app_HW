@@ -121,7 +121,7 @@
   <script>
     const taskInput = document.getElementById('taskInput');
     const taskList = document.getElementById('taskList');
-
+ 
     window.onload = function() {
       const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
       savedTasks.forEach(task => renderTask(task.text, task.completed));
